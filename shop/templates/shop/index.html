@@ -158,6 +158,8 @@
 			cartString += document.getElementById('nm'+x).innerHTML+ ' Qty: ' + cart[x]+ "</br>";
 			cartIndex += 1
 		}
+
+		cartString += "<a href='/checkout' class='btn btn-warning' id='checkout'>Checkout</a>";		
 		document.getElementById('cart').setAttribute('data-content',cartString);
 		$('[data-toggle="popover"]').popover()
 	}
